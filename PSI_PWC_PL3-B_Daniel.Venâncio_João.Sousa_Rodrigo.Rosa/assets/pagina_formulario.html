@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Formulário</title>
+</head>
+
+<body>
+  <header class="formulario-header">
+    <div class="container-formulario">
+      <link rel="stylesheet" href="styles.css">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-10 mb-md-6">
+              <li class="nav-item">
+                <a href="/projeto.html">
+                  <img src="\imagens\logo-form.png" alt="Ícone Home" class="nav-icon">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/projeto.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/adoção.html">Adoção</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/favoritos.html">Favoritos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/pagina_formulario.html">Formulário</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/loja.html">Loja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contactos.html">Contactos</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <!---------------------------------------------FIM DO HEADER---------------------------------------------->
+  <!--------------------------------------------TITULO DA PÁGINA-------------------------------------------->
+  <h2 class="titulo_formulario_sobre"><br>Formulário para adoção</h2>
+  <p class="texto_formulario">Obrigado pelo interesse em adotar um dos nossos animais.<br>
+    Pedimos que preencha este formulário com o máximo de informação possível,<br> para que o possamos ajudar na escolha
+    do animal perfeito para si.<br><br>
+    Faremos os possíveis, para que a sua experiência connosco seja fantástica.</p>
+  <!--------------------------------AQUI ADICIONA-SE OS CAMPOS DO FORMULÁRIO-------------------------------->
+
+  <form method="post" id="formulario-adoção" style="margin: 50px 600px 120px 120px">
+    <!---------------------------------------------NOME COMPLETO---------------------------------------------->
+    <div class="container-formulario mt-5 mb-5">
+      <div class="row">
+
+        <div class="mb-3">
+          <label for="nomeInput" class="form-label label-atecinco">Nome Completo<span class="obrigatorio">
+              *</span></label>
+          <input type="text" class="form-control" id="nomeInput" aria-describedby="nomeHelp" required>
+          <div id="nomeHelp" class="form-text"></div>
+        </div>
+        <!-----------------------------------------Contacto telefónico-------------------------------------------->
+        <div class="mb-3">
+          <label for="telefoneInput" class="form-label">Contacto telefónico<span class="obrigatorio"> *</span></label>
+          <input type="tel" class="form-control label-atecinco" id="telefoneInput" aria-describedby="telefoneHelp"
+            required>
+          <div id="telefoneHelp" class="form-text"></div>
+        </div>
+        <!------------------------------------Hora preferencial de contacto-------------------------------------->
+        <div class="mb-3">
+          <label for="horarioInput" class="form-label">Horário preferencial de contacto<span class="obrigatorio">
+              *</span></label>
+          <input type="text" class="form-control label-atecinco" id="horarioInput" aria-describedby="horarioHelp"
+            required>
+          <div id="horarioHelp" class="form-text"></div>
+        </div>
+        <!----------------------------------------------EMAIL---------------------------------------------------->
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">E-mail<span class="obrigatorio"> *</span></label>
+          <input type="email" class="form-control label-atecinco" id="emailInput" required>
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <!-----------------------------------------------IDADE---------------------------------------------------->
+        <div class="mb-3">
+          <label for="idadeInput" class="form-label">Idade<span class="obrigatorio"> *</span></label>
+          <input type="text" class="form-control label-atecinco" id="idadeInput" aria-describedby="idadeHelp" required>
+          <div id="idadeHelp" class="form-text"></div>
+        </div>
+      </div>
+      <!-----------------------------------------------MORADA--------------------------------------------------->
+      <div class="mb-3">
+        <label for="moradaInput" class="form-label">Morada<span class="obrigatorio"> *</span></label>
+        <textarea class="form-control" id="moradaInput" rows="5" required></textarea>
+      </div>
+      <!-----------------------------------------------CIDADE--------------------------------------------------->
+      <div class="mb-3">
+        <label for="cidadeInput" class="form-label">Cidade<span class="obrigatorio"> *</span></label>
+        <input type="text" class="form-control" id="cidadeInput" aria-describedby="cidadeHelp" required>
+        <div id="cidadeHelp" class="form-text"></div>
+      </div>
+      <!----------------------------------------------PROFISSÃO------------------------------------------------->
+      <div class="mb-3">
+        <label for="profissãoInput" class="form-label">Profissão<span class="obrigatorio"> *</span></label>
+        <input type="text" class="form-control" id="profissãoInput" aria-describedby="profissãoHelp" required>
+        <div id="profissãoHelp" class="form-text"></div>
+      </div>
+      <!---------------------------------------NOME DO ANIMAL ESPECIFICO----------------------------------------->
+      <div class="mb-3">
+        <label for="adoção-especificaInput" class="form-label">Se gostaria de adoptar um animal específico, indique por
+          favor o
+          nome do animal.</label>
+        <input type="text" class="form-control" id="adoção-especificaInput" aria-describedby="adoção-especificaHelp">
+        <div id="adoção-especificaHelp" class="form-text"></div>
+      </div>
+      <!-------------------------------------GENERO DO ANIMAL ESPECIFICO----------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Caso não procure adoptar um animal específico, indique se tem preferência pelo sexo do
+          animal.<span class="obrigatorio"> *</span></label>
+        <!--FÊMEA-->
+        <div>
+          <input type="radio" name="gender" id="female" style="margin-left: 20px;" required>
+          <label for="male">Fêmea</label>
+        </div>
+        <!--MACHO-->
+        <div>
+          <input type="radio" name="gender" id="male" style="margin-left: 20px;" required>
+          <label for="male">Macho</label>
+        </div>
+        <!--OUTRA-->
+        <div>
+          <input type="radio" name="gender" id="other" style="margin-left: 20px;" required>
+          <label for="other">Indiferente</label>
+        </div>
+      </div>
+      <!-----------------------------------------OBJETIVO DA ADOÇÃO--------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Qual o objetivo da adoção?<span class="obrigatorio"> *</span></label>
+        <!--COMPANHIA PARA OUTRO GATO-->
+        <div>
+          <input type="checkbox" name="objetive" id="Companhia-gato" style="margin-left: 20px;" required>
+          <label for="Companhia-gato">Companhia para outro gato</label>
+        </div>
+        <!--COMPANHIA-->
+        <div>
+          <input type="checkbox" name="objetive" id="Companhia" style="margin-left: 20px;" required>
+          <label for="Companhia">Companhia</label>
+        </div>
+        <!--CRIAÇÃO-->
+        <div>
+          <input type="checkbox" name="objetive" id="Criação" style="margin-left: 20px;" required>
+          <label for="Criação">Criação</label>
+        </div>
+      </div>
+      <!------------------------------------------TIPO DE HABITAÇÃO--------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Tipo de habitação.<span class="obrigatorio"> *</span></label>
+        <!--APARTAMENTO-->
+        <div>
+          <input type="radio" name="habitação" id="Apartamento" style="margin-left: 20px;" required>
+          <label for="Apartamento">Apartamento</label>
+        </div>
+        <!--CASA COM QUINTAL/ACESSO AO EXTERIOR-->
+        <div>
+          <input type="radio" name="habitação" id="quintal/acesso" style="margin-left: 20px;" required>
+          <label for="quintal/acesso">quintal/acesso ao exterior</label>
+        </div>
+      </div>
+      <!-------------------------------------------JARDIM VEDADO------------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Se tem jardim, este está completamente vedado?</label>
+        <!--SIM-->
+        <div>
+          <input type="checkbox" name="jardim" id="sim" style="margin-left: 20px;">
+          <label for="sim">Sim</label>
+        </div>
+        <!--NÃO-->
+        <div>
+          <input type="checkbox" name="jardim" id="não" style="margin-left: 20px;">
+          <label for="não">Não</label>
+        </div>
+      </div>
+      <!------------------------------------HABITAÇÃO PROPRIA OU ARRENDADA-------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">A habitação é?<span class="obrigatorio"> *</span></label>
+        <!--PROPRIA-->
+        <div>
+          <input type="checkbox" name="habitação-pessoal" id="Própria" style="margin-left: 20px;" required>
+          <label for="Própria">Própria</label>
+        </div>
+        <!--ARRENDADA-->
+        <div>
+          <input type="checkbox" name="habitação-pessoal" id="Arrendada" style="margin-left: 20px;" required>
+          <label for="Arrendada">Arrendada</label>
+        </div>
+      </div>
+      <!---------------------------------------QUANTOS ADULTOS NA CASA?----------------------------------------->
+      <div class="mb-3">
+        <label for="adultosInput" class="form-label">Quantos adultos vivem na casa?<span class="obrigatorio">
+            *</span></label>
+        <input type="text" class="form-control" id="adultosInput" aria-describedby="adultosHelp" required>
+        <div id="adultosHelp" class="form-text"></div>
+      </div>
+      <!----------------------------------------VIVEM CRIANÇAS NA CASA----------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Vivem crianças na casa? Se sim, indique o intervalo de idades.<span
+            class="obrigatorio"> *</span></label>
+        <!--Não há crianças-->
+        <div>
+          <input type="checkbox" name="crianças" id="não-tem" style="margin-left: 20px;" required>
+          <label for="não-tem">Não existem crianças</label>
+        </div>
+        <!--| <5 anos |-->
+        <div>
+          <input type="checkbox" name="crianças" id="menor-5" style="margin-left: 20px;" required>
+          <label for="menor-5"> &lt;5 anos </label>
+        </div>
+        <!--5 a 10 anos-->
+        <div>
+          <input type="checkbox" name="crianças" id="5-10" style="margin-left: 20px;" required>
+          <label for="5-10">5 a 10 anos</label>
+        </div>
+        <!--| >5 anos |-->
+        <div>
+          <input type="checkbox" name="crianças" id="maior-10" style="margin-left: 20px;" required>
+          <label for="maior-10"> &gt;10 anos</label>
+        </div>
+      </div>
+      <!-------------------------------------------CASA VISITADA------------------------------------------------>
+      <div class="mb-3">
+        <label class="form-label">A casa é visitada frequentemente por crianças?<span class="obrigatorio">
+            *</span></label>
+        <!--SIM-->
+        <div>
+          <input type="radio" name="visita" id="sim" style="margin-left: 20px;" required>
+          <label for="sim">Sim</label>
+        </div>
+        <!--NÃO-->
+        <div>
+          <input type="radio" name="visita" id="não" style="margin-left: 20px;" required>
+          <label for="não">Não</label>
+        </div>
+      </div>
+      <!----------------------------------------ANIMAL SOZINHO EM CASA------------------------------------------>
+      <div class="mb-3">
+        <label for="animal-sozinhoInput" class="form-label">Quantas horas por dia, em média, passará o animal, sozinho
+          em
+          casa?<span class="obrigatorio"> *</span></label>
+        <input type="text" class="form-control" id="animal-sozinhoInput" aria-describedby="sozinhosHelp" required>
+        <div id="sozinhosHelp" class="form-text"></div>
+      </div>
+      <!----------------------------------------OUTROS ANIMAIS EM CASA?----------------------------------------->
+      <div class="mb-3">
+        <label for="outros-animaisInput" class="form-label">Tem outros animais em casa e/ou a seu cargo? Se sim,
+          especifique
+          por favor o tipo e a idade.<span class="obrigatorio"> *</span></label>
+        <input type="text" class="form-control" id="outros-animaisInput" aria-describedby="outros-animaisHelp" required>
+        <div id="outros-animaisHelp" class="form-text"></div>
+      </div>
+
+      <!--..................................QUESTÕES DA PERSONALIDADE DO ANIMAL...............................-->
+      <br>
+      <p>Que tipo de personalidade espera encontrar no animal? Preencha por favor as próximas questões:</p>
+      <!------------------------------------------GOSTE DE CRIANÇAS--------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Goste de crianças:<span class="obrigatorio"> *</span></label>
+        <!--MUITO IMPORTANTE-->
+        <div>
+          <input type="radio" name="gosta-crianças" id="Muito importante" style="margin-left: 20px;" required>
+          <label for="Muito importante">Muito importante</label>
+        </div>
+        <!--IMPORTANTE-->
+        <div>
+          <input type="radio" name="gosta-crianças" id="Importante" style="margin-left: 20px;" required>
+          <label for="Importante">Importante</label>
+        </div>
+        <!--POUCO IMPORTANTE-->
+        <div>
+          <input type="radio" name="gosta-crianças" id="Pouco importante" style="margin-left: 20px;" required>
+          <label for="Pouco importante">Pouco importante</label>
+        </div>
+      </div>
+      <!---------------------------------------SOCIAVEL COM ANIMAIS--------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Sociável com outros animais:<span class="obrigatorio"> *</span></label>
+        <!--MUITO IMPORTANTE-->
+        <div>
+          <input type="radio" name="sociavel" id="Muito importante" style="margin-left: 20px;" required>
+          <label for="Muito importante">Muito importante</label>
+        </div>
+        <!--IMPORTANTE-->
+        <div>
+          <input type="radio" name="sociavel" id="Importante" style="margin-left: 20px;" required>
+          <label for="Importante">Importante</label>
+        </div>
+        <!--POUCO IMPORTANTE-->
+        <div>
+          <input type="radio" name="sociavel" id="Pouco importante" style="margin-left: 20px;" required>
+          <label for="Pouco importante">Pouco importante</label>
+        </div>
+      </div>
+      <!--------------------------------------IMPORTA COM ESTRANHOS--------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Não se importe com estranhos:<span class="obrigatorio"> *</span></label>
+        <!--MUITO IMPORTANTE-->
+        <div>
+          <input type="radio" name="estranhos" id="Muito importante" style="margin-left: 20px;" required>
+          <label for="Muito importante">Muito importante</label>
+        </div>
+        <!--IMPORTANTE-->
+        <div>
+          <input type="radio" name="estranhos" id="Importante" style="margin-left: 20px;" required>
+          <label for="Importante">Importante</label>
+        </div>
+        <!--POUCO IMPORTANTE-->
+        <div>
+          <input type="radio" name="estranhos" id="Pouco importante" style="margin-left: 20px;" required>
+          <label for="Pouco importante">Pouco importante</label>
+        </div>
+      </div>
+      <!-------------------------------------ESTERILIZADO/CASTRADO---------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Esteja esterilizado/castrado:<span class="obrigatorio"> *</span></label>
+        <!--MUITO IMPORTANTE-->
+        <div>
+          <input type="radio" name="esrerilizado/castrado" id="Muito importante" style="margin-left: 20px;" required>
+          <label for="Muito importante">Muito importante</label>
+        </div>
+        <!--IMPORTANTE-->
+        <div>
+          <input type="radio" name="esrerilizado/castrado" id="Importante" style="margin-left: 20px;" required>
+          <label for="Importante">Importante</label>
+        </div>
+        <!--POUCO IMPORTANTE-->
+        <div>
+          <input type="radio" name="esrerilizado/castrado" id="Pouco importante" style="margin-left: 20px;" required>
+          <label for="Pouco importante">Pouco importante</label>
+        </div>
+      </div>
+      <!-----------------------------------GOSTA DE SER PEGADO AO COLO------------------------------------------>
+      <div class="mb-3">
+        <label class="form-label">Goste de ser pegado ao colo:<span class="obrigatorio"> *</span></label>
+        <!--MUITO IMPORTANTE-->
+        <div>
+          <input type="radio" name="pegado-ao-colo" id="Muito importante" style="margin-left: 20px;" required>
+          <label for="Muito importante">Muito importante</label>
+        </div>
+        <!--IMPORTANTE-->
+        <div>
+          <input type="radio" name="pegado-ao-colo" id="Importante" style="margin-left: 20px;" required>
+          <label for="Importante">Importante</label>
+        </div>
+        <!--POUCO IMPORTANTE-->
+        <div>
+          <input type="radio" name="pegado-ao-colo" id="Pouco importante" style="margin-left: 20px;" required>
+          <label for="Pouco importante">Pouco importante</label>
+        </div>
+      </div>
+      <!----------------------------------------QUE SEJA CALMO-------------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Que seja calmo:<span class="obrigatorio"> *</span></label>
+        <!--MUITO IMPORTANTE-->
+        <div>
+          <input type="radio" name="calmo" id="Muito importante" style="margin-left: 20px;" required>
+          <label for="Muito importante">Muito importante</label>
+        </div>
+        <!--IMPORTANTE-->
+        <div>
+          <input type="radio" name="calmo" id="Importante" style="margin-left: 20px;" required>
+          <label for="Importante">Importante</label>
+        </div>
+        <!--POUCO IMPORTANTE-->
+        <div>
+          <input type="radio" name="calmo" id="Pouco importante" style="margin-left: 20px;" required>
+          <label for="Pouco importante">Pouco importante</label>
+        </div>
+      </div>
+      <!--------------------------------------COMPORTA-SE SOZINHO----------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Que se comporte bem quando fica sozinho:<span class="obrigatorio"> *</span></label>
+        <!--MUITO IMPORTANTE-->
+        <div>
+          <input type="radio" name="comportado" id="Muito importante" style="margin-left: 20px;" required>
+          <label for="Muito importante">Muito importante</label>
+        </div>
+        <!--IMPORTANTE-->
+        <div>
+          <input type="radio" name="comportado" id="Importante" style="margin-left: 20px;" required>
+          <label for="Importante">Importante</label>
+        </div>
+        <!--POUCO IMPORTANTE-->
+        <div>
+          <input type="radio" name="comportado" id="Pouco importante" style="margin-left: 20px;" required>
+          <label for="Pouco importante">Pouco importante</label>
+        </div>
+      </div>
+      <!--------------------------------------ATIVIDADE DO ANIMAL----------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Vivem crianças na casa? Se sim, indique o intervalo de idades.<span
+            class="obrigatorio"> *</span></label>
+        <!--CALMO-->
+        <div>
+          <input type="checkbox" name="atividade" id="calmo" style="margin-left: 20px;" required>
+          <label for="calmo">Calmo</label>
+        </div>
+        <!--MODERADAMENTE ATIVO-->
+        <div>
+          <input type="checkbox" name="atividade" id="moderadamente ativo" style="margin-left: 20px;" required>
+          <label for="moderadamente ativo">Moderadamente ativo</label>
+        </div>
+        <!--ATIVO-->
+        <div>
+          <input type="checkbox" name="atividade" id="ativo" style="margin-left: 20px;" required>
+          <label for="ativo">Ativo</label>
+        </div>
+        <!--INDIFERENTE-->
+        <div>
+          <input type="checkbox" name="atividade" id="indiferente" style="margin-left: 20px;" required>
+          <label for="indiferente">Indiferente</label>
+        </div>
+      </div>
+      <!---------------------------------------PRIMEIRO ANIMAL-------------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Será o seu primeiro animal?<span class="obrigatorio">*</span></label>
+        <!--SIM-->
+        <div>
+          <input type="checkbox" name="visita" id="sim" style="margin-left: 20px;" required>
+          <label for="sim">Sim</label>
+        </div>
+        <!--NÃO-->
+        <div>
+          <input type="checkbox" name="visita" id="não" style="margin-left: 20px;" required>
+          <label for="não">Não</label>
+        </div>
+      </div>
+      <!-------------------------------------EXPERIENCIA OPCIONAL----------------------------------------------->
+      <div class="mb-3">
+        <label for="experiência-opcionalInput" class="form-label">Se não, conte-nos a sua experiência por favor.</label>
+        <input type="text" class="form-control" id="experiência-opcionalInput"
+          aria-describedby="experiência-opcionalHelp">
+        <div id="experiência-opcionalHelp" class="form-text"></div>
+      </div>
+      <!--------------------------------------ANIMAL NA AUSÊNCIA------------------------------------------------>
+      <div class="mb-3">
+        <label class="form-label">Na sua ausência (férias p.ex.) como pretende deixar o animal?<span
+            class="obrigatorio">*</span></label>
+        <!--FAMILIAR/CONHECIDO-->
+        <div>
+          <input type="checkbox" name="ausência" id="familiar/conhecido" style="margin-left: 20px;" required>
+          <label for="familiar/conhecido">Ficará aos cuidados de um familiar/conhecido;</label>
+        </div>
+        <!--HOTEL-->
+        <div>
+          <input type="checkbox" name="ausência" id="hotel" style="margin-left: 20px;" required>
+          <label for="hotel">Ficará em hotel;</label>
+        </div>
+        <!--VAI JUNTO DE FERIAS-->
+        <div>
+          <input type="checkbox" name="ausência" id="junto-ferias" style="margin-left: 20px;" required>
+          <label for="junto-ferias">Irá comigo de férias.</label>
+        </div>
+      </div>
+      <!------------------------------------------ANIMAL PRESO-------------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">O animal ficará preso em alguma situação?<span class="obrigatorio">*</span></label>
+        <!--SIM-->
+        <div>
+          <input type="radio" name="animal-preso" id="sim" style="margin-left: 20px;" required>
+          <label for="sim">Sim</label>
+        </div>
+        <!--NÃO-->
+        <div>
+          <input type="radio" name="animal-preso" id="não" style="margin-left: 20px;" required>
+          <label for="não">Não</label>
+        </div>
+      </div>
+      <!------------------------------------------VETERINÁRIO--------------------------------------------------->
+      <div class="mb-3">
+        <label for="veterinárioInput" class="form-label">Tem algum veterinário preferido? Se sim, deixe o seu nome e
+          contacto.</label>
+        <input type="text" class="form-control" id="veterinárioInput" aria-describedby="veterinárioHelp">
+        <div id="veterinárioHelp" class="form-text"></div>
+      </div>
+      <!------------------------------------------ACIDENTE------------------------------------------------------>
+      <div class="mb-3">
+        <label class="form-label">No caso de acidente, irá recorrer a um veterinário?<span
+            class="obrigatorio">*</span></label>
+        <!--SIM-->
+        <div>
+          <input type="radio" name="acidente" id="sim" style="margin-left: 20px;" required>
+          <label for="sim">Sim</label>
+        </div>
+        <!--NÃO-->
+        <div>
+          <input type="radio" name="acidente" id="não" style="margin-left: 20px;" required>
+          <label for="não">Não</label>
+        </div>
+      </div>
+      <!------------------------------------------CONTA ELEVADA-------------------------------------------------->
+      <div class="mb-3">
+        <label for="contaelevadaInput" class="form-label">Se a conta for elevada, o que fará?<span
+            class="obrigatorio">*</span></label>
+        <input type="text" class="form-control" id="contaelevadaInput" aria-describedby="contaelevadaHelp" required>
+        <div id="contaelevadaHelp" class="form-text"></div>
+      </div>
+      <!---------------------------------------ALIMENTAÇÃO DO ANIMAL--------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Que tipo de alimentação pretende dar ao animal?<span
+            class="obrigatorio">*</span></label>
+        <!--RAÇÃO SECA-->
+        <div>
+          <input type="checkbox" name="alimentação" id="ração-seca" style="margin-left: 20px;" required>
+          <label for="ração-seca">Ração Seca</label>
+        </div>
+        <!--RAÇÃO HUMIDA-->
+        <div>
+          <input type="checkbox" name="alimentação" id="ração-húmida" style="margin-left: 20px;" required>
+          <label for="ração-húmida">Ração húmida</label>
+        </div>
+        <!--COMIDA CASEIRA-->
+        <div>
+          <input type="checkbox" name="alimentação" id="comida-caseira" style="margin-left: 20px;" required>
+          <label for="comida-caseira">Comida Caseira</label>
+        </div>
+        <!--RESTOS DE REFEIÇÕES-->
+        <div>
+          <input type="checkbox" name="alimentação" id="restos" style="margin-left: 20px;" required>
+          <label for="restos">Restos de refeições</label>
+        </div>
+      </div>
+      <!---------------------------------------PLANOS 10 A 15 ANOS--------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">O que está nos seus planos para os próximos 10/15 anos?<span
+            class="obrigatorio">*</span></label>
+        <!--RAÇÃO SECA-->
+        <div>
+          <input type="checkbox" name="planos" id="filhos" style="margin-left: 20px;" required>
+          <label for="filhos">Ter filhos</label>
+        </div>
+        <!--RAÇÃO HUMIDA-->
+        <div>
+          <input type="checkbox" name="planos" id="viajar" style="margin-left: 20px;" required>
+          <label for="viajar">Viajar</label>
+        </div>
+        <!--COMIDA CASEIRA-->
+        <div>
+          <input type="checkbox" name="planos" id="casar" style="margin-left: 20px;" required>
+          <label for="casar">Casar</label>
+        </div>
+        <!--RESTOS DE REFEIÇÕES-->
+        <div>
+          <input type="checkbox" name="planos" id="mudar-país" style="margin-left: 20px;" required>
+          <label for="mudar-país">Mudar de país/cidade/etc</label>
+        </div>
+        <!--RESTOS DE REFEIÇÕES-->
+        <div>
+          <input type="checkbox" name="planos" id="mudar-casa" style="margin-left: 20px;" required>
+          <label for="mudar-casa">Mudar de casa</label>
+        </div>
+      </div>
+      <!--------------------------------------------ALERGIAS---------------------------------------------------->
+      <div class="mb-3">
+        <label for="alergiaInput" class="form-label">Algum dos elementos do seu agregado familiar, ou amigos/parentes
+          próximos,
+          tem alergia a cães ou gatos?<span class="obrigatorio">*</span></label>
+        <input type="text" class="form-control" id="alergiaInput" aria-describedby="alergiaHelp" required>
+        <div id="alergiaHelp" class="form-text"></div>
+      </div>
+      <!--------------------------------------------GRAVIDEZ---------------------------------------------------->
+      <div class="mb-3">
+        <label for="gravidezInput" class="form-label">Em caso de gravidez, fará o teste da toxoplasmose?<span
+            class="obrigatorio">*</span></label>
+        <input type="text" class="form-control" id="gravidezInput" aria-describedby="gravidezHelp" required>
+        <div id="gravidezHelp" class="form-text"></div>
+      </div>
+      <!-----------------------------------------GRAVIDEZ POSITIVA---------------------------------------------->
+      <div class="mb-3">
+        <label for="gravidez-posiInput" class="form-label">Se for positivo, o que fará?<span
+            class="obrigatorio">*</span></label>
+        <input type="text" class="form-control" id="gravidez-posiInput" aria-describedby="gravidez-posiHelp" required>
+        <div id="gravidez-posiHelp" class="form-text"></div>
+      </div>
+      <!-----------------------------------------APOIO/CONSELHOS------------------------------------------------->
+      <div class="mb-3">
+        <label class="form-label">Gostaria de continuar a ter o nosso apoio/conselhos, depois de adoptar o animal?<span
+            class="obrigatorio">*</span></label>
+        <!--SIM-->
+        <div>
+          <input type="radio" name="conselhos" id="sim" style="margin-left: 20px;" required>
+          <label for="sim">Sim</label>
+        </div>
+        <!--NÃO-->
+        <div>
+          <input type="radio" name="conselhos" id="não" style="margin-left: 20px;" required>
+          <label for="não">Não</label>
+        </div>
+      </div>
+      <!-----------------------------------------OUTRA INFORMAÇÃO---------------------------------------------->
+      <div class="mb-3">
+        <label for="outra-informaçãoInput" class="form-label">Outra informação que queira partilhar connosco.</label>
+        <input type="text" class="form-control" id="outra-informaçãoInput" aria-describedby="outra-informaçãoHelp">
+        <div id="outra-informaçãoHelp" class="form-text"></div>
+      </div>
+      <!-----------------------------------------BOTÃO DE ANEXO------------------------------------------------->
+      <label for="fileInput">Anexar documentos:</label><br>
+      <input type="file" id="fileInput" name="files[]" multiple>
+      <!--------------------------------------POLITICA DE PRIVACIDADE------------------------------------------->
+      <br>
+      <br>
+      <p>Vamos manter os seus dados em segurança, enquanto assim o pretender, pode eliminar ou editar. Consulte a nossa
+        <a href="#" style="color: blue;">Política de Privacidade</a>.<span class="obrigatorio">*</span></p>
+      <div class="mb-3 form-check">
+        <input style="margin: 5px 10px 10px 0px" type="checkbox" class="form-check-input" id="termsInput" required>
+        <label class="form-check-label " for="termsInput">Li e concordo com a Política de Privacidade.</label>
+      </div>
+      <!----------------------------------------BOTÃO SUBMIT-------------------------------------------------->
+      <span class="obrigatorio">*</span>
+      <a>Campos de preenchimento obrigatório</a><br>
+      <button type="submit" class="btn btn-primary">Adotar</button>
+  </form>
+  <!-----------------------------------------------Rodapé--------------------------------------------------------->
+  </div>
+  <br>
+  <br>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="conteudo-rodape">
+        </div>
+        <div class="titlo-contato">
+          <p>Informações de Contato</p>
+        </div>
+        <div class="address"></div>
+        <div class="endereco-rodape">
+          <p>Daniel Venâncio</p>
+        </div>
+        <div class="email-rodape">
+          <p>João Sousa</p>
+        </div>
+        <div class="telefone-rodape">
+          <p>Rodrigo Rosa</p>
+        </div>
+        <hr class="separator">
+        <div class="Botao-contactos">
+          <a href="/contactos.html">
+            <button type="button" class="btn btn-outline-success">Contactos</button>
+          </a>
+        </div>
+  </footer>
+  <!------------------------------------------FORA DO FORM------------------------------------------------>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
